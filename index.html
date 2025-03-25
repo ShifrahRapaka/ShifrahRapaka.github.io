@@ -11,14 +11,14 @@
             font-family: 'Garamond', serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #1c1c1c, #333);
-            color: #f5f5f5;
+            background: linear-gradient(to bottom, #fff, #f5f5f5);
+            color: #000;
             text-align: justify;
             line-height: 1.8;
         }
         header {
-            background: linear-gradient(to right, #000, #444);
-            color: white;
+            background: linear-gradient(to right, #fff, #ddd);
+            color: #000;
             text-align: center;
             padding: 50px 20px;
         }
@@ -35,25 +35,25 @@
             margin: 20px 0 0;
         }
         nav ul li a {
-            color: white;
+            color: #000;
             text-decoration: none;
             font-size: 1.2rem;
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            color: #ccc;
+            color: #555;
         }
         section {
-            background: #2c2c2c;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
             margin: 20px auto;
             max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         section h2 {
             font-size: 2rem;
-            border-bottom: 2px solid #444;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -61,8 +61,8 @@
             font-size: 1.1rem; /* Increased font size by +1 */
         }
         footer {
-            background: #111;
-            color: #aaa;
+            background: #f5f5f5;
+            color: #555;
             text-align: center;
             padding: 20px;
             margin-top: 20px;
@@ -71,11 +71,11 @@
             margin: 0;
         }
         a {
-            color: #bbb;
+            color: #000;
             text-decoration: none;
         }
         a:hover {
-            color: white;
+            color: #555;
         }
     </style>
 </head>
@@ -85,7 +85,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -101,8 +101,8 @@
         <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
-            <p><h3>Master of Science in Computer Software </h3><br>
-            University of Central Missouri, USA<br>
+            <h3>Master of Science in Computer Software</h3>
+            <p>University of Central Missouri, USA<br>
             <i>Aug 2023 – May 2025</i></p>
         </section>
         <!-- Technical Skills Section -->
@@ -146,21 +146,6 @@
                     <li> - Designed and implemented reusable UI components using OOP principles aligned with client branding.</li>
                     <li> - Collaborated with cross-functional teams to gather requirements and deliver tailored solutions, improving project efficiency by 15%.</li>
                 </ul>
-            </article>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>HealX - Doctor Appointment Booking WebApp</h3>
-                <p><strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript</p>
-                <ul>
-                    <li> - Developed an appointment scheduling system for doctors and patients, supporting 3 user roles with 50+ appointments daily.</li>
-                    <li> - Integrated a payment gateway that processed 100+ payments monthly to ensure secure transactions.</li>
-                    <li> - Worked on key pages including Index.php, Register.php, and ScheduleAppointment.php for smooth user functionality.</li>
-                    <li> - Collaborated on database design and implemented user login functionalities using pdo.php.</li>
-                </ul>
-                <p><a href="https://github.com/yourusername/HealX" target="_blank" title="View on GitHub">🔗</a></p>
             </article>
         </section>
         <!-- Contact Section -->
