@@ -17,7 +17,7 @@
             line-height: 1.8;
         }
         header {
-            background: linear-gradient(to right, #fff, #e6e6fa); /* White to Lavender */
+            background: linear-gradient(to right, #fff, #000080); /* White to Navy Blue */
             color: #000;
             text-align: center;
             padding: 50px 20px;
@@ -77,6 +77,40 @@
         a:hover {
             color: #555;
         }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-tile {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 250px; /* Ensures square tiles */
+        }
+        .project-tile h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .project-tile p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .project-tile a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+        }
+        .project-tile a:hover {
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -89,22 +123,28 @@
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
+        <div style="margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/shifrahrapaka/" target="_blank" title="LinkedIn" style="margin-right: 15px;">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://github.com/ShifrahRapaka" target="_blank" title="GitHub">
+                <img src="images/github-icon.png" alt="GitHub" style="width: 30px; height: 30px;">
+            </a>
+        </div>
     </header>
     <main>
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <article>
-                <h3>HealX - Doctor Appointment Booking WebApp</h3>
-                <p><strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript</p>
-                <ul>
-                    <li> - Developed an appointment scheduling system for doctors and patients, supporting 3 user roles with 50+ appointments daily.</li>
-                    <li> - Integrated a payment gateway that processed 100+ payments monthly to ensure secure transactions.</li>
-                    <li> - Worked on key pages including Index.php, Register.php, and ScheduleAppointment.php for smooth user functionality.</li>
-                    <li> - Collaborated on database design and implemented user login functionalities using pdo.php.</li>
-                </ul>
-                <p><a href="https://github.com/ShifrahRapaka/HealX" target="_blank" title="View on GitHub">🔗</a></p>
-            </article>
+            <div class="projects-container">
+                <div class="project-tile">
+                    <h3>HealX</h3>
+                    <p><strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript</p>
+                    <p>Developed an appointment scheduling system for doctors and patients, supporting 3 user roles with 50+ appointments daily.</p>
+                    <a href="https://github.com/ShifrahRapaka/HealX" target="_blank" title="View on GitHub">🔗 View on GitHub</a>
+                </div>
+                <!-- Add more project tiles here if needed -->
+            </div>
         </section>
     </main>
     <footer>
