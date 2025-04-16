@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Futuristic font */
+
         body {
-            font-family: 'Garamond', serif;
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #fff, #f5f5f5);
-            color: #000;
+            background: linear-gradient(to bottom, #0f0f0f, #1c1c1c); /* Darker background */
+            color: #e0e0e0; /* Light text for contrast */
             text-align: justify;
             line-height: 1.8;
         }
+
         header {
-            background: linear-gradient(to right, #fff, #1877f2); /* White to Meta Blue */
-            color: #000;
+            background: linear-gradient(to right, #0f0f0f, #1877f2); /* Dark to Meta Blue */
+            color: #fff;
             text-align: center;
             padding: 50px 20px;
+            box-shadow: 0 0 15px #1877f2; /* Glowing effect */
         }
+
         header h1 {
             font-size: 3rem;
             margin: 0;
+            text-shadow: 0 0 10px #1877f2; /* Glowing text */
         }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -34,48 +41,79 @@
             padding: 0;
             margin: 20px 0 0;
         }
+
         nav ul li a {
-            color: #000;
+            color: #e0e0e0;
             text-decoration: none;
             font-size: 1.2rem;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
+
         nav ul li a:hover {
-            color: #555;
+            color: #1877f2;
+            text-shadow: 0 0 10px #1877f2; /* Glowing hover effect */
         }
+
         section {
-            background: #fff;
+            background: #1c1c1c;
             padding: 20px;
             border-radius: 10px;
             margin: 20px auto;
             max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
+
         section h2 {
             font-size: 2rem;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #1877f2;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 5px #1877f2; /* Glowing section titles */
         }
+
         p, li {
-            font-size: 1.1rem; /* Increased font size by +1 */
+            font-size: 1.1rem;
         }
+
         footer {
-            background: #f5f5f5;
+            background: #0f0f0f;
             color: #555;
             text-align: center;
             padding: 20px;
             margin-top: 20px;
+            box-shadow: 0 0 10px #1877f2; /* Glowing footer */
         }
+
         footer p {
             margin: 0;
         }
+
         a {
-            color: #000;
+            color: #1877f2;
             text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
+
         a:hover {
-            color: #555;
+            color: #fff;
+            text-shadow: 0 0 10px #1877f2; /* Glowing hover effect */
+        }
+
+        .icon-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .icon-links a:hover {
+            color: #1877f2;
+            text-shadow: 0 0 10px #1877f2; /* Glowing hover effect */
+        }
+
+        .icon-links i {
+            font-size: 1.5rem;
         }
     </style>
     <!-- Font Awesome CDN for Icons -->
@@ -90,14 +128,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div style="margin-top: 20px; font-size: 1.5rem;">
-            <a href="https://www.linkedin.com/in/shifrahrapaka/" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="margin-right: 15px; text-decoration: none; color: #000;">
+        <div class="icon-links" style="margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/shifrahrapaka/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/ShifrahRapaka" target="_blank" rel="noopener noreferrer" title="GitHub" style="margin-right: 15px; text-decoration: none; color: #000;">
+            <a href="https://github.com/ShifrahRapaka" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://drive.google.com/file/d/187Wmh2E6_mqIQQF0T8Us8XvZrOjl4y8G/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume" style="text-decoration: none; color: #000;">
+            <a href="https://drive.google.com/file/d/187Wmh2E6_mqIQQF0T8Us8XvZrOjl4y8G/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume">
                 <i class="fas fa-file-alt"></i>
             </a>
         </div>
@@ -128,6 +166,16 @@
         <!-- Experience Section -->
         <section id="experience">
             <h2>Experience</h2>
+            <article>
+                <h3>Founding Software Engineer | Wing Software</h3>
+                <p><em>January 2025 – Present</em></p>
+                <ul>
+                    <li> - Architecting an AI-powered Chrome extension integrating Whisper and GPT-4 for real-time YouTube video summarization, targeting 60% reduction in viewer watch time while maintaining context accuracy.</li>
+                    <li> - Building a full-stack application using React with Tailwind CSS frontend and Python FastAPI backend, processing 100+ videos weekly with 85% target accuracy rate.</li>
+                    <li> - Deploying to Chrome Web Store and scaling backend infrastructure using Vercel's serverless functions, supporting 1,000 concurrent users with 99.9% uptime target.</li>
+                    <li> - Implementing responsive UI overlays within YouTube's interface, conducting A/B testing to achieve 40% improvement in user satisfaction through optimized UX design.</li>
+                </ul>
+            </article>
             <article>
                 <h3>Software Development Engineer | Accenture</h3>
                 <p><em>July 2022 – July 2023</em></p>
